@@ -3,11 +3,11 @@
 > Scala Terminal String Styling
 
 ## Features
-* Dependency free
-* Apply multiple text styles
-* Supports 256-color and Truecolor
-* Gradient text styling
-* Automatically detects color support and style accordingly
+🪶 Dependency free<br/>
+🤹‍♂️ Apply multiple text styles<br/>
+🎨 Supports 256-color and Truecolor<br/>
+🏳️‍🌈 Gradient text styling<br/>
+🕵️‍♂️ Automatically detects color support and style accordingly<br/>
 
 ![brush](assets/brush.png)
 
@@ -112,8 +112,7 @@ For a complete list of available colors, refer to the [full named colors list](h
     - `2` - ANSI 256 colors support.
     - `3` - Truecolor 16 million colors support.
 
-### Notes
-Insperation were taken from the following projects:
+### Insperation
 * [chalk](https://github.com/chalk/chalk) (js)
 * [colored](https://github.com/colored-rs/colored) (rust)
 * [colored](https://github.com/defunkt/colored) (ruby)
