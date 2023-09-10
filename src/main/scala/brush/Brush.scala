@@ -3,8 +3,6 @@ package brush
 import brush.AnsiColors._
 import brush.AnsiUtils._
 import brush.Gradient._
-import brush.ColorMap
-import brush.Color
 
 class Brush {
   private def render(str: String, color: (Int, Int)): String =
@@ -49,9 +47,7 @@ class Brush {
 
   /* add an implicit method to String to allow chaining of colors */
   implicit def BrushStringDecorator(str: String): BrushMethods =
-    new BrushMethods(
-      str,
-    )
+    new BrushMethods(str)
 
   class BrushMethods(str: String) {
     // modifiers

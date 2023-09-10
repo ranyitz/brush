@@ -33,7 +33,7 @@ object Gradient {
   private def interpolateColor(
     start: (Int, Int, Int),
     end: (Int, Int, Int),
-    t: Double,
+    t: Double
   ): (Int, Int, Int) = {
     val (r1, g1, b1) = start
     val (r2, g2, b2) = end
@@ -48,7 +48,7 @@ object Gradient {
   private def getGradientWithRgb(
     str: String,
     colors: Seq[(Int, Int, Int)],
-    bg: Boolean = false,
+    bg: Boolean = false
   ): String = {
     if (colors.isEmpty) {
       return str
@@ -94,11 +94,11 @@ object Gradient {
 
   def renderGradient(
     str: String,
-    colors: Seq[(Int, Int, Int)],
+    colors: Seq[(Int, Int, Int)]
   ): String = getGradientWithRgb(str, colors)
 
   def renderBgGradient(
     str: String,
-    colors: Seq[(Int, Int, Int)],
+    colors: Seq[(Int, Int, Int)]
   ): String = getGradientWithRgb(str, colors, true)
 }

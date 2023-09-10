@@ -13,7 +13,7 @@ object Example extends App {
       .bgRgb(0, 66, 77)
       .rgb(255, 190, 255)
       .bold
-      .underline,
+      .underline
   )
   println(
     "gradient background with rgb colors"
@@ -21,8 +21,8 @@ object Example extends App {
         (255, 102, 102), // Red
         (255, 204, 102), // Orange
         (255, 255, 102), // Yellow
-        (204, 255, 102), // Green
-      ),
+        (204, 255, 102) // Green
+      )
   )
   println(
     "gradient background with named css colors"
@@ -33,8 +33,8 @@ object Example extends App {
         "aliceblue",
         "palegoldenrod",
         "lightgray",
-        "paleturquoise",
+        "paleturquoise"
       )
-      .black,
+      .black
   )
 }
