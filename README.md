@@ -15,7 +15,7 @@
 To include Brush in your Scala project, add the following dependency:
 
 ```scala
-libraryDependencies += "com.ranyitz" %% "brush" % "0.1.0"
+libraryDependencies += "io.github.ranyitz" %% "brush" % "0.1.0"
 ```
 
 ## Usage
