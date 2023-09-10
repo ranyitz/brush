@@ -1,0 +1,6 @@
+/.bsp/
+target/
+project/
+.metals/
+.bloop
+.idea
