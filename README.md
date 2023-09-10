@@ -112,7 +112,7 @@ For a complete list of available colors, refer to the [full named colors list](h
     - `2` - ANSI 256 colors support.
     - `3` - Truecolor 16 million colors support.
 
-### Insperation
+### Inspiration
 * [chalk](https://github.com/chalk/chalk) (js)
 * [colored](https://github.com/colored-rs/colored) (rust)
 * [colored](https://github.com/defunkt/colored) (ruby)
