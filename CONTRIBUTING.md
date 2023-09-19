@@ -16,6 +16,6 @@ At the moment the publishing process is manual.
 2. Create a git tag
 3. Add a new section to `CHANGELOG.md`
 4. Run `sbt publishSigned` for every version (`2.12`, `2.13`, `3`)
-5. Use https://s01.oss.sonatype.org/ to promote the artifacts.
+5. Use https://s01.oss.sonatype.org/ to promote the artifacts. (Select the project, click Close from the menu, and then Release.)
 
 I'm not sure if it's possible to automate this process, but I'll be happy to learn about it.
