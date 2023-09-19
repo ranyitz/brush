@@ -21,4 +21,14 @@ object AnsiUtils {
         Math.round(b / 255.0 * 5).toInt
     }
   }
+
+  def hexToRgb(hex: String): (Int, Int, Int) = {
+    val cleanHex = if (hex.startsWith("#")) hex.substring(1) else hex
+
+    val red = Integer.parseInt(cleanHex.substring(0, 2), 16)
+    val green = Integer.parseInt(cleanHex.substring(2, 4), 16)
+    val blue = Integer.parseInt(cleanHex.substring(4, 6), 16)
+
+    (red, green, blue)
+  }
 }
