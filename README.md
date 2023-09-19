@@ -15,7 +15,7 @@
 To include Brush in your Scala project, add the following dependency:
 
 ```scala
-libraryDependencies += "io.github.ranyitz" %% "brush" % "0.1.0"
+libraryDependencies += "io.github.ranyitz" %% "brush" % "0.2.1"
 ```
 
 > Supports Scala 2.12, 2.13, 3.0
