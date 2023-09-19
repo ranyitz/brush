@@ -7,7 +7,7 @@ trait Color[A] {
 object Color {
   implicit object StringColor extends Color[String] {
     def toRGB(param: String): (Int, Int, Int) = {
-      if (param.startsWith("#")) {
+      if (AnsiUtils.isHex(param)) {
         AnsiUtils.hexToRgb(param)
       } else {
         ColorMap.getRgb(param)

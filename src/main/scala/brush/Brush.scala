@@ -101,7 +101,7 @@ class Brush {
     def bgCyanBright: String = render(str, BG_CYAN_BRIGHT)
     def bgWhiteBright: String = render(str, BG_WHITE_BRIGHT)
 
-    // truecolor
+    // rgb/truecolor
     def rgb(red: Int, green: Int, blue: Int): String = renderTruecolor(str, (red, green, blue))
     def bgRgb(red: Int, green: Int, blue: Int): String =
       renderBgTruecolor(str, (red, green, blue))
@@ -113,7 +113,6 @@ class Brush {
       val rgb = hexToRgb(colorHex)
       renderTruecolor(str, rgb)
     }
-
     def bgHex(colorHex: String): String = {
       val rgb = hexToRgb(colorHex)
       renderBgTruecolor(str, rgb)
