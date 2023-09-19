@@ -47,7 +47,4 @@ object Example extends App {
       )
       .black
   )
-  println("Gradient".gradient("red", "orange", "yellow"))
-  println("Gradient".bgGradient("#ff0000", "#ffa500", "#ffff00"))
-  println("Gradient".gradient((255, 0, 0), (255, 165, 0), (255, 255, 0)))
 }

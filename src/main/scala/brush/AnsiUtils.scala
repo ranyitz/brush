@@ -23,7 +23,12 @@ object AnsiUtils {
   }
 
   def hexToRgb(hex: String): (Int, Int, Int) = {
-    val rgb = java.awt.Color.decode(hex).getRGB
-    ((rgb >> 16) & 0xff, (rgb >> 8) & 0xff, rgb & 0xff)
+    val cleanHex = if (hex.startsWith("#")) hex.substring(1) else hex
+
+    val red = Integer.parseInt(cleanHex.substring(0, 2), 16)
+    val green = Integer.parseInt(cleanHex.substring(2, 4), 16)
+    val blue = Integer.parseInt(cleanHex.substring(4, 6), 16)
+
+    (red, green, blue)
   }
 }
