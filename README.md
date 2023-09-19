@@ -25,20 +25,17 @@ To start styling your terminal strings, simply import `brush._` in your Scala fi
 ```scala
 import brush._
  
-println("bold".bold)
-println("green".green)
-println("inverted".blue.inverse)
-println("strikethrough".bgYellow.italic.strikethrough)
-println("use any css color".color("darkorchid"))
-println(
+"bold".bold
+"green".green
+"inverted".blue.inverse
+"strikethrough".bgYellow.italic.strikethrough
+"use any css color".color("darkorchid")
 "use a specific rgb color"
     .bgRgb(0, 66, 77)
     .rgb(255, 190, 255)
     .bold
     .underline
-)
-println("use a specific hex color".hex("#D2691E").bgHex("#E6E6FA"))
-println(
+"use a specific hex color".hex("#D2691E").bgHex("#E6E6FA"))
 "gradient background with rgb colors"
     .gradient(
     (255, 102, 102), // Red
@@ -46,8 +43,6 @@ println(
     (255, 255, 102), // Yellow
     (204, 255, 102) // Green
     )
-)
-println(
 "gradient background with named css colors"
     .bgGradient(
     "lavender",
@@ -59,16 +54,12 @@ println(
     "paleturquoise"
     )
     .black
-)
-println(
 "gradient with hex triplet colors"
     .gradient(
     "#008080", // Teal
     "#FFFF66", // Yellow
     "#FFCC66" // Orange
-    )
-    .black
-)
+    ).black
 ```
 
 ### Text Modifiers
