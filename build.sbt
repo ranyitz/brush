@@ -7,5 +7,7 @@ ThisBuild / version := "0.2.0"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "brush"
+    name := "brush",
+    libraryDependencies += "io.monix" %% "minitest" % "2.9.6" % "test",
+    testFrameworks += new TestFramework("minitest.runner.Framework")
   )
