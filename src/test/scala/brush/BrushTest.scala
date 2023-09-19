@@ -2,6 +2,9 @@ import minitest._
 import brush.test.TestUtils._
 import brush._
 
+// The tests should be ran on a terminal that supports truecolor.
+// You can use FORCE_COLOR=3 to force truecolor support.
+
 object BrushTest extends SimpleTestSuite {
   test("modifiers") {
     expect("reset".reset, "\u001B[0mreset\u001B[0m")
