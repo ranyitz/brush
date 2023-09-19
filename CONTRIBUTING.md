@@ -9,6 +9,11 @@ Please provide us with an issue in case you've found a bug, want a new feature, 
 ## Submitting a Pull Request
 Good pull requests, such as patches, improvements, and new features, are a fantastic help. They should remain focused in scope and avoid containing unrelated commits.
 
+## Running the tests
+> The tests are written for truecolor terminals, if your terminal doesn't support truecolor, you can add the following environment variable to your shell: `export FORCE_COLOR=3`
+
+The tests are written using [minitest](https://github.com/monix/minitest). You can run them using `sbt test`.
+
 ## Publishing
 At the moment the publishing process is manual.
 
