@@ -18,6 +18,7 @@ To include Brush in your Scala project, add the following dependency:
 libraryDependencies += "io.github.ranyitz" %% "brush" % "0.1.0"
 ```
 
+> Supports Scala 2.12, 2.13, 3.0
 ## Usage
 To start styling your terminal strings, simply import `brush._` in your Scala file:
 
