@@ -108,6 +108,17 @@ class Brush {
     def truecolor(red: Int, green: Int, blue: Int): String = rgb(red, green, blue)
     def bgTruecolor(red: Int, green: Int, blue: Int): String = bgRgb(red, green, blue)
 
+    // hex
+    def hex(colorHex: String): String = {
+      val rgb = hexToRgb(colorHex)
+      renderTruecolor(str, rgb)
+    }
+
+    def bgHex(colorHex: String): String = {
+      val rgb = hexToRgb(colorHex)
+      renderBgTruecolor(str, rgb)
+    }
+
     // css named colors
     def color(colorName: String): String = {
       val rgb = ColorMap.getRgb(colorName)

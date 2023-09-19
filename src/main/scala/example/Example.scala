@@ -15,6 +15,7 @@ object Example extends App {
       .bold
       .underline
   )
+  println("use a specific hex color".hex("#D2691E").bgHex("#E6E6FA"))
   println(
     "gradient background with rgb colors"
       .gradient(
@@ -37,4 +38,16 @@ object Example extends App {
       )
       .black
   )
+  println(
+    "gradient with hex triplet colors"
+      .gradient(
+        "#008080", // Teal
+        "#FFFF66", // Yellow
+        "#FFCC66" // Orange
+      )
+      .black
+  )
+  println("Gradient".gradient("red", "orange", "yellow"))
+  println("Gradient".bgGradient("#ff0000", "#ffa500", "#ffff00"))
+  println("Gradient".gradient((255, 0, 0), (255, 165, 0), (255, 255, 0)))
 }

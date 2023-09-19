@@ -21,4 +21,9 @@ object AnsiUtils {
         Math.round(b / 255.0 * 5).toInt
     }
   }
+
+  def hexToRgb(hex: String): (Int, Int, Int) = {
+    val rgb = java.awt.Color.decode(hex).getRGB
+    ((rgb >> 16) & 0xff, (rgb >> 8) & 0xff, rgb & 0xff)
+  }
 }
