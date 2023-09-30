@@ -11,6 +11,10 @@
 
 ![brush](assets/brush.png)
 
+[![Build Status](https://github.com/ranyitz/brush/actions/workflows/ci.yml/badge.svg)](https://github.com/ranyitz/brush/actions/workflows/ci.yml)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.ranyitz/brush_2.13.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.github.ranyitz%22%20AND%20a:%22casing_2.13%22)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Installation
 To include Brush in your Scala project, add the following dependency:
 
