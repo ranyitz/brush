@@ -1,6 +1,6 @@
 package brush
 
-object Gradient {
+private object Gradient {
 
   /**
    * This function splits the string into three parts:

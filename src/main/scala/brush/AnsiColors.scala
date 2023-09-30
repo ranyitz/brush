@@ -5,7 +5,7 @@ import brush.AnsiUtils._
 // Every color is a tuple of two integers,
 // the first integer is the color code,
 // the second integer is the color close code.
-object AnsiColors {
+private object AnsiColors {
   val RESET = (0, 0)
   val BOLD = (1, 22)
   val DIM = (2, 22)
