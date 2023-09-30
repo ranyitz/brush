@@ -13,6 +13,7 @@
 
 [![Build Status](https://github.com/ranyitz/brush/actions/workflows/ci.yml/badge.svg)](https://github.com/ranyitz/brush/actions/workflows/ci.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.ranyitz/brush_2.13.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.github.ranyitz%22%20AND%20a:%22casing_2.13%22)
+[![Scala Version](https://img.shields.io/badge/scala-2.12%20%7C%202.13%20%7C%203.0-blue.svg)](https://www.scala-lang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
@@ -22,7 +23,6 @@ To include Brush in your Scala project, add the following dependency:
 libraryDependencies += "io.github.ranyitz" %% "brush" % "0.2.1"
 ```
 
-> Supports Scala 2.12, 2.13, 3.0
 ## Usage
 To start styling your terminal strings, simply import `brush._` in your Scala file:
 

@@ -1,5 +1,3 @@
-package example
-
 import brush._
 
 object Example extends App {
