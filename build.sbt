@@ -3,7 +3,7 @@ val Scala213: String = "2.13.11"
 val Scala3: String = "3.3.0"
 
 ThisBuild / scalaVersion := Scala213
-ThisBuild / version := "0.2.1"
+ThisBuild / version := "0.3.0"
 
 lazy val root = (project in file("."))
   .settings(

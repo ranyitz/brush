@@ -46,10 +46,10 @@ class Brush {
   }
 
   /* add an implicit method to String to allow chaining of colors */
-  implicit def BrushStringDecorator(str: String): BrushMethods =
+  implicit def decorate(str: String): BrushMethods =
     new BrushMethods(str)
 
-  class BrushMethods(str: String) {
+  protected class BrushMethods(str: String) {
     // modifiers
     def reset: String = render(str, RESET)
     def bold: String = render(str, BOLD)

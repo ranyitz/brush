@@ -1,6 +1,7 @@
 import minitest._
 import brush.test.TestUtils._
 import brush._
+import brush.Brush
 
 // The tests should be ran on a terminal that supports truecolor.
 // You can use FORCE_COLOR=3 to force truecolor support.
@@ -154,5 +155,10 @@ object BrushTest extends SimpleTestSuite {
       "bgGradient".bold.bgGradient("red", "blue"),
       "\u001B[1m" + redBlueBgGradientAnsi + "\u001B[22m"
     )
+  }
+
+  test("explicit API") {
+    val string = Brush.decorate("string")
+    expect(string.red, "\u001B[31mstring\u001B[39m")
   }
 }

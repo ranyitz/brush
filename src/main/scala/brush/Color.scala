@@ -1,10 +1,10 @@
 package brush
 
-trait Color[A] {
+private trait Color[A] {
   def toRGB(param: A): (Int, Int, Int)
 }
 
-object Color {
+private object Color {
   implicit object StringColor extends Color[String] {
     def toRGB(param: String): (Int, Int, Int) = {
       if (AnsiUtils.isHex(param)) {

@@ -1,6 +1,6 @@
 package brush
 
-object ColorMap {
+private object ColorMap {
   val colorMap = Map(
     "aliceblue" -> (240, 248, 255),
     "antiquewhite" -> (250, 235, 215),

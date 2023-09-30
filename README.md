@@ -66,6 +66,15 @@ import brush._
     ).black
 ```
 
+Another option if you prefer not to use the implicit API:
+
+```scala
+import brush.Brush
+
+val redText = Brush.decorate("red text").red
+```
+> After creating a decorated string, you can apply any of the colors and modifiers.
+
 ### Text Modifiers
 Brush provides various text modifiers for customization:
 
