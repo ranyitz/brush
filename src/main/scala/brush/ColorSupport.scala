@@ -5,7 +5,7 @@ package brush
 // - `2` - ANSI 256 colors support.
 // - `3` - Truecolor 16 million colors support.
 private object ColorSupport {
-  def getLevel(): Int = {
+  def getLevel: Int = {
     val colorTermType = sys.env.getOrElse("COLORTERM", "")
     val termType = sys.env.getOrElse("TERM", "")
     val noColor = sys.env.getOrElse("NO_COLOR", "")

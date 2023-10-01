@@ -1,4 +1,4 @@
-package brush.test
+package brush
 
 import minitest.api._
 

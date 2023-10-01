@@ -100,5 +100,5 @@ private object Gradient {
   def renderBgGradient(
     str: String,
     colors: Seq[(Int, Int, Int)]
-  ): String = getGradientWithRgb(str, colors, true)
+  ): String = getGradientWithRgb(str, colors, bg = true)
 }

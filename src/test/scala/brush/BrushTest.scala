@@ -1,7 +1,7 @@
+package brush
+
 import minitest._
-import brush.test.TestUtils._
-import brush._
-import brush.Brush
+import brush.TestUtils._
 
 // The tests should be ran on a terminal that supports truecolor.
 // You can use FORCE_COLOR=3 to force truecolor support.

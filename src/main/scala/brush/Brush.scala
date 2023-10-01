@@ -4,15 +4,17 @@ import brush.AnsiColors._
 import brush.AnsiUtils._
 import brush.Gradient._
 
+import scala.language.implicitConversions
+
 class Brush {
   private def render(str: String, color: (Int, Int)): String =
-    ColorSupport.getLevel() match {
+    ColorSupport.getLevel match {
       case 0 => str
       case 1 | 2 | 3 => s"$ESCAPE${color._1}m$str$ESCAPE${color._2}m"
     }
 
   private def render256(str: String, color: (Int, Int)): String = {
-    ColorSupport.getLevel() match {
+    ColorSupport.getLevel match {
       case 0 => str
       case 1 => str
       case 2 | 3 => s"${ESCAPE}38;5;${color._1}m$str$ESCAPE${color._2}m"
@@ -20,7 +22,7 @@ class Brush {
   }
 
   private def renderBg256(str: String, color: (Int, Int)): String = {
-    ColorSupport.getLevel() match {
+    ColorSupport.getLevel match {
       case 0 => str
       case 1 => str
       case 2 | 3 => s"${ESCAPE}48;5;${color._1}m$str$ESCAPE${color._2}m"
@@ -28,7 +30,7 @@ class Brush {
   }
 
   private def renderTruecolor(str: String, rgb: (Int, Int, Int)): String = {
-    ColorSupport.getLevel() match {
+    ColorSupport.getLevel match {
       case 0 => str
       case 1 => str
       case 2 => render256(str, (rgbToAnsi256(rgb), TEXT_CLOSE))
@@ -37,7 +39,7 @@ class Brush {
   }
 
   private def renderBgTruecolor(str: String, rgb: (Int, Int, Int)): String = {
-    ColorSupport.getLevel() match {
+    ColorSupport.getLevel match {
       case 0 => str
       case 1 => str
       case 2 => renderBg256(str, (rgbToAnsi256(rgb), BG_CLOSE))
